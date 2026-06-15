@@ -1,6 +1,6 @@
 const Admin = () => {
   return (
-    <div className="flex-center h-screen w-screen">
+    <div className="flex-center h-screen w-screen bg-[url(./images/loginBG.png)] bg-no-repeat">
       <form>
         <h1>Admin login</h1>
         <input type="text" name="username" id="username" placeholder="Username" className="input" />
