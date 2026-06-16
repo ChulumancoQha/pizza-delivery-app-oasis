@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
-@theme{
-  --color-primary: #1E293B;
-  --color-secondary: #64748B;
-  --color-accent: #EA580C;
+@theme {
+  --color-primary: #1e293b;
+  --color-secondary: #64748b;
+  --color-accent: #ea580c;
 
-  --color-background: #F8FAFC;
-  --color-surface: #FFFFFF;
-  --color-border: #E2E8F0;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
 
-  --color-text-primary: #0F172A;
-  --color-text-secondary: #64748B;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #64748b;
 }
 
-@layer utilities{
+@layer utilities {
   .input {
     @apply border border-border rounded-md p-2 w-full;
   }
@@ -29,13 +29,19 @@
   h1 {
     @apply text-4xl font-bold text-center mt-10 text-text-primary;
   }
-  form {
+  /* form {
     @apply flex flex-col gap-8 bg-background p-6 rounded-lg shadow-md;
-  }
+  } */
 }
 
-@layer components{
+@layer components {
   .btn {
     @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition-colors;
+  }
+  .form {
+    @apply flex flex-col gap-8 bg-background p-6 rounded-lg shadow-md;
+  }
+  .btn-o {
+    @apply bg-accent text-white px-8 py-2 rounded-md hover:bg-secondary transition-colors;
   }
 }
