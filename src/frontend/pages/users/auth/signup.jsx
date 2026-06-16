@@ -1,7 +1,7 @@
+import Form from "../../../common/form/form";
+
 const SignUp = () => {
-    return ( 
-        <div className=""></div>
-     );
-}
- 
+  return <Form></Form>;
+};
+
 export default SignUp;
