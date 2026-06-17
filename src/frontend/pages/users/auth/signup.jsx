@@ -1,7 +1,9 @@
 import Button from "../../../common/button/button";
 import Form from "../../../common/form/form";
+// import { useState } from "react";
 
 const SignUp = () => {
+    // const [email, setEmail] = useState("")
   return (
     <Form title={"Sign Up!"}>
       <input
