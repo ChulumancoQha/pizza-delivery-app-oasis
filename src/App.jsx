@@ -2,7 +2,7 @@
 import Login from "./frontend/pages/users/auth/login";
 import Forgot from "./frontend/pages/users/auth/forgotpass";
 import SignUp from "./frontend/pages/users/auth/signup";
-import { BrowserRouter as Router, Route, Switch } from "react-router";
+import { Route, Routes } from "react-router";
 import Profile from "./frontend/pages/users/profile/profile";
 import Products from "./frontend/pages/users/products/products";
 import Orders from "./frontend/pages/users/orders/orders";
@@ -18,36 +18,22 @@ const App = () => {
     //   {/* <Forgot /> */}
 
     // </>
-    <Router>
-      <Switch>
+    // <Router>
+      <Routes>
         {/* This is the movement of the Users */}
-        <Route exact path="/">
-          <Login />
-        </Route>
-        <Route exact path="/signup">
-          <SignUp />
-        </Route>
-        <Route exact path="/forgotpassword">
-          <Forgot />
-        </Route>
-        <Route exact path="/profile">
-          <Profile />
-        </Route>
-        <Route exact path="/products">
-          <Products />
-        </Route>
-        <Route exact path="/orders">
-          <Orders />
-        </Route>
-        <Route exact path="/checkout">
-          <Checkout />
-        </Route>
+        <Route exact path="/" element={<Login />} />
+        <Route exact path="/signup" element={<SignUp />} />
+        <Route exact path="/forgotpassword" element={<Forgot />} />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/products" element={<Products />} />
+        <Route exact path="/orders" element={<Orders />} />
+        <Route exact path="/checkout" element={<Checkout />} />
         {/* End of user movement */}
         {/* <Route exact path="/signup">
           <SignUp />
         </Route> */}
-      </Switch>
-    </Router>
+      </Routes>
+    // </Router>
   );
 };
 
